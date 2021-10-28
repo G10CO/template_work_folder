@@ -16,3 +16,9 @@ if ( -Not (Test-Path -Path  $Ruta) )
 {
     mkdir $Ruta
 }
+
+
+#Crear carpetas
+mkdir $($subCarpetas |%{"$Ruta\$carpeta\$_"})
+
+pause
